@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        <title>Writeup</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a onclick="scrollFunc(1)">Intro</a>
+            <a onclick="scrollFunc(2)">Low-Fi</a>
+            <a onclick="scrollFunc(3)">Hi-Fi</a>
+            <a onclick="scrollFunc(4)">Website</a>
+          </div>
+          
+          <div class="main" id = "1">
+            <h1 class = "title">Responsive Redesign</h1>
+            <p class = "intro">The goal of this assignment was to practive the workflow of redesigning a simple website. 
+                We took away the skills necessary to analyze and identify flaws in an existing interface, create low-fidelity and high-fidelity prototypes 
+                for various screen sizes, and build a responsive website based on those prototypes.
+                <br>
+                <br>
+                We first started off by picking a website to redesign. I picked a website for a massage studio. It was very outdated looking
+                 and had a poor layout. There were obvious flaws that could be corrected.
+            </p>
+
+            <div class = "img_div" >
+                <img src="images/watersmassage.png" alt="A screenshot of my selected website">
+            </div>
+
+            <p>I analyzed the usability of the webpage using the criteria of: <br><br></p>
+            <ul class = "criteria">
+                    
+                <li>
+                    Usability
+                </li>
+                <li>Learnability</li>
+                <li>Memorability</li>
+                <li>Accessibility</li>
+            </ul>
+
+            <p><br><br>The problems I found are as follows: <br><br></p>
+           
+            <div>
+                
+
+                
+                <h3>Usability:</h3>
+            <ul>
+                <li>
+                    Logo and pictures are cut off on small screen
+                </li>
+                <li>Font is sometimes hard to read and small.</li>
+                <li>Drop down menu doesn't let you select options as it redirects every time you click it.</li>
+                <li>A few links that link to themselves.</li>
+                <li>Important info about the current state of the practice should be more obvious.</li>
+            </ul>
+
+            <h3>
+                Learnability:
+            </h3>
+            <ul>
+                <li>Links do not appear to be links and you sort of accidentally click them.</li>
+                <li>Text is dense.</li>
+                <li>About page should have more contact details.</li>
+                <li>Drop down menu doesn't show all the treatment options</li>
+                <li>It's hard to find her blog on the pages.</li>
+            </ul>
+
+            <h3>
+                Memorability:
+            </h3>
+            <ul>
+                <li>It might be hard to find contact details as they are sporadically placed around the page</li>
+                <li>It's hard to find her blog on specific procedures on the pages.</li>
+            </ul>
+
+            <h3>
+                Accessibility: 
+            </h3>
+            <ul>
+                <li>There are no alt tags for the images.</li>
+                <li>There are a few empty headers that might confuse users.</li>
+                <li>Heading level is skipped from h1 to h3. The navigation menu contains redundant title text.</li>
+            </ul>
+
+            </div>
+            
+          </div>
+
+          <div class = "div2" id = "2">
+            <h2>Low Fidelity Prototype <br><br></h2>
+            <p>
+                Using the observations from the above, I created a basic wireframe for a more robust and well-designed website that 
+                addresses the problems above. Below is are the images of my wireframes. There are 3 for each type of device. <br><br>
+            </p>
+            <div class = "low_fi_images">
+                <div class = "img_div">
+                    <img class = "low_fi" src="images/laptop-wireframe.png" alt="Laptop low fidelity protoype of the website">
+                </div>
+                
+                <div class = "img_div">
+                    <img class = "low_fi" src="images/tablet-wireframe.png" alt="Tablet low fidelity protoype of the website">
+                </div>
+                
+                <div class = "img_div">
+                    <img class = "low_fi" src="images/phone-wireframe.png" alt="Phone low fidelity protoype of the website">
+                </div>
+                
+            </div>
+          </div>
+
+          <div class = "div3" id="3">
+            <h2>Visual Design Guide and High Fidelity Prototype <br><br></h2>
+            <p>
+                Using the wireframes. I created a high fidelity prototype using figma. Again there are 3 sizes of frames 
+                representative of the different device types. Below are the links to the 3 prototypes. <br><br>
+            </p>
+            <div class = "links_div">
+                <a target = "_blank" href="https://www.figma.com/file/30wka6WSdB6OjWK3QpjGH4/Website-Redesign?node-id=0%3A1">iPhone</a>
+                <a target = "_blank" href="https://www.figma.com/file/30wka6WSdB6OjWK3QpjGH4/Website-Redesign?node-id=1%3A5">iPad</a>
+                <a target = "_blank" href="https://www.figma.com/file/30wka6WSdB6OjWK3QpjGH4/Website-Redesign?node-id=1%3A3">PC</a>
+                <a target = "_blank" href="https://www.figma.com/file/30wka6WSdB6OjWK3QpjGH4/Website-Redesign?node-id=5%3A2">Visual Design Guide</a>
+            </div>
+            
+          </div>
+
+          <div class = "div2" id = "4">
+            <h2>
+                HTML & CSS Version <br><br>
+            </h2>
+
+            <p>
+                Using the wireframe and high fidelity prototypes, I then created an interactive webpage from HTML and CSS that captures my vision
+                of what the new website should look like. Below is the original and the redesigned version. <br><br>
+            </p>
+            <div class = "links_div">
+                <a target = "_blank" href="https://www.albuquerquetherapeuticmassage.com/">Original</a>
+                <a target = "_blank" href="index.html">Redesign</a>
+            </div>
+            
+          </div>
+
+    </body>
+
+    <script>
+        function scrollFunc(id){
+            let e = document.getElementById(id);
+            
+            e.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+                inline: 'center'
+            })
+            
+        }
+    </script>
+</html>

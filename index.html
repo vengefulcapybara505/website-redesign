@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Waters Natural Therapeutics</title>
+    </head>
+
+    <body>
+        <div class = "navbar">
+            
+                <a onclick="scrollFunc('1')">
+                    <img class = "navbar_image" src="images/Picture1.png" alt="Company Logo">
+                </a>
+        
+                    <p class = "navbar_title"> <strong> Waters Natural Therapeutics <br><br></strong></h1>
+                
+                    <div class = "navbar_items">
+                        <a class = "navbar_links" onclick="scrollFunc('1')">
+                            HOME
+                        </a>
+                        <a class = "navbar_links" onclick="scrollFunc('2')">
+                            SERVICES
+                        </a>
+                        <a class = "navbar_links" onclick="scrollFunc('3')">
+                            ABOUT ME
+                        </a>
+
+                        <img class = "menu" src="images/hamburger.svg" alt="Menu" onclick="alert('Functionality Coming Soon!')">
+                    </div>
+                    
+            </div>
+        </div>
+
+        <div id = "1" class = "main">
+            <div class = "info_box">
+                <p>I am not currently taking new clients in my studio</p>
+                <p>Therapeutic Massage(Including TMJ) can be scheduled through <br><br>
+                </p>
+                <a class = "info_link" target = "_blank" href="https://elementsmassage.com/albuquerque"> 
+                 Elements Massage <i style = "font-size: 12px;" class="fa fa-external-link"></i>
+                </a>
+                <p> <br> If you are a Digital Dentistry patient, TMJ massage can be scheduled through<br><br></p>
+                <a class = "info_link" target = "_blank" href="https://digitaldentistrynm.com/">Digital Dentistry <i style = "font-size: 12px;" class="fa fa-external-link"></i></a>
+            </div>
+        </div>
+
+        <div id = '2' class = "intro">
+            <h2>What Is Therapeutic Massage?<br><br></h2>
+            <p>Therapeutic massage involves the manipulation of the body's soft tissue. This can be accomplished through the use of pressure, 
+                vibration, or tension and is generally accomplished manually.  Tissues that can be targeted with massage 
+                include muscles, ligaments, skin, connective tissue, as well as lymphatic vessels.
+                <br><br>
+                At Waters Natural Therapeutics, I specialize in deep tissue massage. Deep tissue massage focuses on the muscles 
+                located below the surface of the top muscles. This type of therapeutic massage is often recommended for individuals 
+                who experience consistent pain as a result of heavy physical activity, such as athletes, or clients who have sustained physical trauma.  
+                Repetitive motion can also cause adhesions to the deeper muscles 
+                causing restricted range of motion. Deep tissue bodywork helps to bring the muscle back to its natural way of working.
+                <br><br>
+                In addition to standard deep tissue therapeutic massage, I also offer massage that focuses on the relief of 
+                pain related to the TMJ (temporomandibular joint). TMJ pain is commonly caused by myofascial pain dysfunction syndrome, 
+                primarily involving the muscles of mastication, otherwise known as your chewing muscles. 
+                Many dentists recommend deep tissue massage for relief of TMJ pain. This involves massage of the facial, neck, 
+                and shoulder muscles. <br><br><br><br>
+                </p>
+                <h3>Down below is a list of the massage services I provide. <br><br></h3>
+                <ul>
+                    <li>TMJ Therapy</li>
+                    <li>Travell and Simons Trigger Point</li>
+                    <li>Deep Tissue</li>
+                    <li>Swedish</li>
+                    <li>Reflexology</li>
+                    <li>Sports</li>
+                </ul>
+        </div>
+
+        <div id = '3' class = "about">
+            <h2>About Me <br><br></h2>
+                <img class = "portrait" src="images/massageLady.jpeg" alt="A portrait of Wendy Waters">
+            <p>
+                <br><br>
+                My name is Wendy Waters and I've been licensed as a massage therapist since 1994. 
+                I was originally trained in Mesa, Arizona at the Institute for Natural Therapeutics.  
+                I've practiced in Albuquerque since 2000. Having spent time in the airline and real estate business, 
+                I really appreciate having the opportunity to work with people on a more personal level. 
+                It brings me great joy to be able to help people relax and pursue a healthy life style.
+                <br><br><br><br>
+            </p>
+
+
+            <h2>Contact Details <br><br></h2>
+
+            <div class="details">
+                
+                    <img class = "map"src="images/map.jpeg" alt="A picture of a map." onclick="window.open('https://google.com/maps', '_blank').focus();">
+                
+                    
+                
+                
+                <div>
+                    <ul class = "contacts">
+                        <li>
+                            <a class="info_link" target="_blank" href="https://google.com/maps">308 Negra Arroyo Lane, Albuquerque, New Mexico. 87104</a>
+                        </li>
+                        <li>
+                            <a class="info_link" href="tel:(121)-123-4567">(121)-123-4567</a>
+                        </li>
+                        <li>
+                            <a class="info_link" href="mailto: watersnt@gmail.com">watersnt@gmail.com</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class = "footer">
+            <p>Waters Natural Waters Natural Therapeutics
+                <br>Copyright © 2022 - All Rights Reserved</p>
+        </div>
+        
+    </body>
+
+    <script>
+        function scrollFunc(id){
+            let e = document.getElementById(id);
+            if(id == '1' || id == '2')
+            {
+            e.scrollIntoView({
+                block: 'end',
+                behavior: 'smooth',
+                inline: 'center'
+            })
+            }
+
+            if(id == '3')
+            {
+            e.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+                inline: 'center'
+            })
+            }
+            
+        }
+    </script>
+</html>
