@@ -12,10 +12,6 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h1, h2, h3{
-    white-space: nowrap;
-}
-
 
 /*prevents these from expanding beyond its container and taking up a row*/
 img, picture, video, canvas, svg
@@ -63,6 +59,7 @@ table{
     text-align: center;
     letter-spacing: .1rem;
     text-transform: uppercase;
+    
 }
 
 .navbar_links
@@ -104,7 +101,7 @@ a.navbar_links:focus::after
 
 .menu{
     display: none;
-   max-width: 35%;
+   width: 50px;
 }
 
 
@@ -118,7 +115,7 @@ a.navbar_links:focus::after
 {
     width: 50%;
     padding: 2%;
-    border: solid #DB751F;
+    border: solid red;
     border-width: 5px;
     border-radius: 10px;
     text-align: center;
@@ -138,21 +135,33 @@ a.navbar_links:focus::after
     padding: 10%;
 }
 
+.massage-img
+{
+    width: 600px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #de7b11;
+}
+
 .about
 {
     background-image: url("images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .portrait
 {
-    max-width: 25%;
+    width: 200px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #de7b11;
 }
 
 .details{
@@ -160,7 +169,11 @@ a.navbar_links:focus::after
     display: flex;
     justify-content: center;
     padding: 5%;
-    width: 70%;
+    width: 700px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #de7b11;
 }
 
 
@@ -194,6 +207,9 @@ a.navbar_links:focus::after
     text-align: center;
 }
 
+
+
+
    
 
 @media only screen and (max-width: 1000px) {
@@ -210,7 +226,24 @@ a.navbar_links:focus::after
     {
         justify-content: right;
     }
-}
+    .details
+    {
+        width: 70%;
+        font-size: 12px;
+    }
 
+}
+@media only screen and (max-width: 600px) 
+{
+    .details
+    {
+        width: 100%;
+        font-size: 10px;
+    }
+    .info_box
+    {
+        width: 80%;
+    }
+}
 
 

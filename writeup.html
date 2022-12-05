@@ -3,26 +3,31 @@
 <html>
     <head>
         <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Writeup</title>
     </head>
     <body>
-        <div class="navbar">
-            <a onclick="scrollFunc(1)">Intro</a>
-            <a onclick="scrollFunc(2)">Low-Fi</a>
-            <a onclick="scrollFunc(3)">Hi-Fi</a>
-            <a onclick="scrollFunc(4)">Website</a>
-          </div>
-          
+
+        <div class = "return">
+            <a style = "text-decoration: none;" href="https://vengefulcapybara505.github.io/final-portfolio/index.html">
+                <h3 class = "return-link hvr-reveal">Go back</h3>
+            </a>
+            
+        </div>
+
           <div class="main" id = "1">
             <h1 class = "title">Responsive Redesign</h1>
-            <p class = "intro">The goal of this assignment was to practive the workflow of redesigning a simple website. 
-                We took away the skills necessary to analyze and identify flaws in an existing interface, create low-fidelity and high-fidelity prototypes 
+            <p class = "intro">The goal of this assignment was to practice the workflow of redesigning a simple website. 
+                We learned the skills necessary to analyze and identify flaws in an existing interface, create low-fidelity and high-fidelity prototypes 
                 for various screen sizes, and build a responsive website based on those prototypes.
                 <br>
                 <br>
                 We first started off by picking a website to redesign. I picked a website for a massage studio. It was very outdated looking
-                 and had a poor layout. There were obvious flaws that could be corrected.
+                 and had a poor layout. It did not work well on small screen sizes and I found that it was very irritating to try and 
+                 complete any simple tasks on the interface. Improving its compatability with smaller screens was my top priority.
+                 However, there were obvious flaws that could also be corrected. <br><br>
             </p>
+            <a class = "hvr-underline-from-left" target = "_blank" href="https://www.albuquerquetherapeuticmassage.com/">Waters Natural Therapeutics <i style = "font-size: 16px; color: white" class="fa fa-external-link"></i></a>
 
             <div class = "img_div" >
                 <img src="images/watersmassage.png" alt="A screenshot of my selected website">
@@ -45,38 +50,38 @@
                 
 
                 
-                <h3>Usability:</h3>
+                <h3>Usability: (how easy is it for the user to do common tasks?)</h3><p></p>
             <ul>
                 <li>
-                    Logo and pictures are cut off on small screen
+                    Logo and pictures are cut off on small screen size.
                 </li>
                 <li>Font is sometimes hard to read and small.</li>
+                <li>Text is dense.</li>
                 <li>Drop down menu doesn't let you select options as it redirects every time you click it.</li>
-                <li>A few links that link to themselves.</li>
-                <li>Important info about the current state of the practice should be more obvious.</li>
+                <li>A few links exist that link to themselves.</li>
+                <li>Important info about the current state of the practice should be more obvious. It is easily glossed over</li>
             </ul>
 
             <h3>
-                Learnability:
+                Learnability: (how easy it for users to do simple tasks on their first time using the interface?)
             </h3>
             <ul>
                 <li>Links do not appear to be links and you sort of accidentally click them.</li>
-                <li>Text is dense.</li>
                 <li>About page should have more contact details.</li>
-                <li>Drop down menu doesn't show all the treatment options</li>
-                <li>It's hard to find her blog on the pages.</li>
+                <li>Drop down menu doesn't show all the available treatment options</li>
+                <li>It's hard to find the owner's blog on the pages.</li>
             </ul>
 
             <h3>
-                Memorability:
+                Memorability (how easy is it for users to do tasks once they have learned the design?):
             </h3>
             <ul>
                 <li>It might be hard to find contact details as they are sporadically placed around the page</li>
-                <li>It's hard to find her blog on specific procedures on the pages.</li>
+                <li>It's hard to find her blog on specific procedures on the pages. You have to go through many links</li>
             </ul>
 
             <h3>
-                Accessibility: 
+                Accessibility (What tools are available for handicapped users?): 
             </h3>
             <ul>
                 <li>There are no alt tags for the images.</li>
@@ -90,21 +95,24 @@
 
           <div class = "div2" id = "2">
             <h2>Low Fidelity Prototype <br><br></h2>
-            <p>
+            <p style="text-align: left;">
                 Using the observations from the above, I created a basic wireframe for a more robust and well-designed website that 
-                addresses the problems above. Below is are the images of my wireframes. There are 3 for each type of device. <br><br>
+                addresses the problems above. A wireframe is a two-dimensional illustration of a page's interface 
+                that specifically focuses on space allocation and prioritization of 
+                content, functionalities available, and intended behaviors. Below is are the images of my wireframes. There are 3 for each type of device. 
+                They contain annotations that address the usability issues with the original site.<br><br>
             </p>
             <div class = "low_fi_images">
-                <div class = "img_div">
-                    <img class = "low_fi" src="images/laptop-wireframe.png" alt="Laptop low fidelity protoype of the website">
+                <div>
+                    <img class="figma_div" src="images/laptop-wireframe.png" alt="Laptop low fidelity protoype of the website">
                 </div>
                 
                 <div class = "img_div">
-                    <img class = "low_fi" src="images/tablet-wireframe.png" alt="Tablet low fidelity protoype of the website">
+                    <img class = "hvr-grow figma_div" style="width: 50%;" src="images/tablet-wireframe.png" alt="Tablet low fidelity protoype of the website">
                 </div>
                 
                 <div class = "img_div">
-                    <img class = "low_fi" src="images/phone-wireframe.png" alt="Phone low fidelity protoype of the website">
+                    <img class = "hvr-grow figma_div" style="width: 50%;" src="images/phone-wireframe.png" alt="Phone low fidelity protoype of the website">
                 </div>
                 
             </div>
@@ -112,15 +120,18 @@
 
           <div class = "div3" id="3">
             <h2>Visual Design Guide and High Fidelity Prototype <br><br></h2>
-            <p>
-                Using the wireframes. I created a high fidelity prototype using figma. Again there are 3 sizes of frames 
-                representative of the different device types. Below are the links to the 3 prototypes. <br><br>
+            <p style="text-align: left;">
+                Using the wireframes. I created a high fidelity prototype using figma. 
+                High-fidelity prototypes are prototypes that allow user interactions. High-fidelity
+                prototypes take you as close as possible to a true representation of the user interface. The style guide sets
+                guidelines for the the color scheme and general aesthetic appearance. Again there are 3 sizes of frames 
+                representative of the different device types. Below are the the style guide and the 3 prototypes.  <br><br>
             </p>
-            <div class = "links_div">
-                <a target = "_blank" href="https://www.figma.com/file/30wka6WSdB6OjWK3QpjGH4/Website-Redesign?node-id=0%3A1">iPhone</a>
-                <a target = "_blank" href="https://www.figma.com/file/30wka6WSdB6OjWK3QpjGH4/Website-Redesign?node-id=1%3A5">iPad</a>
-                <a target = "_blank" href="https://www.figma.com/file/30wka6WSdB6OjWK3QpjGH4/Website-Redesign?node-id=1%3A3">PC</a>
-                <a target = "_blank" href="https://www.figma.com/file/30wka6WSdB6OjWK3QpjGH4/Website-Redesign?node-id=5%3A2">Visual Design Guide</a>
+            <div>
+                <iframe class = "figma_div" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F30wka6WSdB6OjWK3QpjGH4%2FWebsite-Redesign%3Fnode-id%3D5%253A2%26t%3DEwjwfCcLnzUEqMmU-1" allowfullscreen></iframe>
+                <iframe class = "figma_div" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F30wka6WSdB6OjWK3QpjGH4%2FWebsite-Redesign%3Fnode-id%3D1%253A3%26t%3DEwjwfCcLnzUEqMmU-1" allowfullscreen></iframe>
+                <iframe class = "figma_div" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F30wka6WSdB6OjWK3QpjGH4%2FWebsite-Redesign%3Fnode-id%3D1%253A5%26t%3DEwjwfCcLnzUEqMmU-1" allowfullscreen></iframe>
+                <iframe class = "figma_div" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F30wka6WSdB6OjWK3QpjGH4%2FWebsite-Redesign%3Fnode-id%3D0%253A1%26t%3DEwjwfCcLnzUEqMmU-1" allowfullscreen></iframe>
             </div>
             
           </div>
@@ -130,17 +141,18 @@
                 HTML & CSS Version <br><br>
             </h2>
 
-            <p>
+            <p style="text-align: left">
                 Using the wireframe and high fidelity prototypes, I then created an interactive webpage from HTML and CSS that captures my vision
-                of what the new website should look like. Below is the original and the redesigned version. <br><br>
+                of what the new website should look like. I focused on making it responsive to varying screen sizes and create
+                a simple and intuitive layout. Compared to the original site, it should be easier to navigate, find information quickly, and 
+                work better on varying screen sizes. Below are the links the original and the redesigned version. <br><br>
             </p>
             <div class = "links_div">
-                <a target = "_blank" href="https://www.albuquerquetherapeuticmassage.com/">Original</a>
-                <a target = "_blank" href="index.html">Redesign</a>
+                <a class = "hvr-underline-from-left" target = "_blank" href="https://www.albuquerquetherapeuticmassage.com/">Original <i style = "font-size: 12px;" class="fa fa-external-link"></i></a>
+                <a class = "hvr-underline-from-left" target = "_blank" href="index.html">Redesign <i style = "font-size: 12px;" class="fa fa-external-link"></i></a>
             </div>
             
           </div>
-
     </body>
 
     <script>
