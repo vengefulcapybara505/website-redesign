@@ -47,7 +47,9 @@ table{
 
 body{
   color: white;
-  background-color: black;
+  background-color: #1b1b1b;
+	max-width: 120ch;
+	margin: auto;
 }
 
 a{
